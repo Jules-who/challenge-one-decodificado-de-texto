@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografador de Texto</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <main>
+        <header>
+             <img src="./assets/logofrog 1.png" alt="logo" class="logo">
+        </header>
+        <div class="container">
+            <div class="criptografar">
+                <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
+            </div>
+            <div class="alerta">
+                <p><img src="assets/bi_exclamation-circle-fill.png" alt="">Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="botoes">
+                <button class="btn-criptografar" type="button" onclick="criptografar()">Criptografar</button>
+                <input type="button" class="btn-descriptografar" value="Descripitografar" onclick="descriptografar()">
+            </div>
+        </div>
+         <div class="criptografado">
+            <img src="assets/frogprocurandotxt 1.png" alt="" id="ilustracao">
+            <div class="mensagem-criptografada" id="mensagem-criptografada">
+                <h2 id="titulo-mensagem">Nenhuma mensagem encontrada</h2>
+                <p id="paragrafo">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                 <textarea name="mensagem" id="mensagem" cols="30" rows="10" class="mensagem"></textarea>  
+                 <div class="copiar">
+                    <!-- <input class="btn-copiar" type="button" value="Copiar" onclick="Copiar()"> -->
+                    <button class="btn-copiar" id="execCopy"> Copiar </button>
+                 </div>
+                
+            </div>
+         </div>
+    </main>
+    <footer class="rodape">Desenvolvido por Juilla Chaves</footer>
+</body>
+<script src="script.js"></script>
+</html>
